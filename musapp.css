@@ -1,0 +1,370 @@
+:root{
+
+    --lightblue-clr: rgb(234, 243, 252);
+    --black-clr: black;
+    --blue-clr:rgb(102, 210, 210);
+    --darkblue--clr:rgb(155, 235, 235);
+    --white-clr: white;
+    --grey-clr: rgb(126, 126, 126);
+    --darkgrey-clr:rgb(92, 93, 94);
+}
+/* toggle theme  */
+.dark-mode {
+    background-color: var(--black-clr);
+    color: var(--white-clr);
+}
+
+body{
+    
+    background-color: var(--lightblue-clr);
+    color: var(--black-clr);
+    overflow:hidden;
+    
+}
+/* header section */
+header{
+    width:auto;
+    height: 10vh;
+    background-color: rgb(159, 183, 197);
+    box-shadow: 1px 1px 10px 1px #3faddf inset;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 5px;
+}
+
+header h1{ 
+    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; */
+    color: rgb(0, 0, 0);
+    font-size: 2.6rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input[type="checkbox"]{
+position: relative;
+width: 40px;
+height: 20px;
+border-radius: 20px;
+background-color: rgb(0, 0, 0);
+appearance: none;
+cursor: pointer;
+}
+
+input[type="checkbox"]:checked{
+background-color: rgb(255, 255, 255);
+}
+
+input[type="checkbox"]::before{
+content: "";
+position: absolute;
+left: 0;
+right: 0;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background-color: rgb(165, 204, 229);
+}
+
+input[type="checkbox"]:checked::before
+{
+left:20px;
+background-color: rgb(134, 213, 227);
+}
+
+
+/* container section */
+.container
+{
+
+    margin-top: 10px;
+    width:auto;
+    height:90vh;
+    /* border:solid whi; */
+    box-shadow: 1px 1px 10px 1px #c0e9f4 inset;
+    display: flex;
+    
+}
+/* All-songs section */
+.All-Song-div
+{
+    margin: 10px;  
+    width:40vw;
+    height:95%;
+    /* border:solid black; */
+    border-radius: 4px;
+    background-color:var(--blue-clr);
+}
+
+/* genre selection */
+.select-Genre{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+}
+
+.select-Genre select {
+    border: solid rgb(195, 192, 192); 
+    background-color:var(--grey-clr);     
+    border-radius: 5px; 
+    font-size:0.9rem; 
+    color: #0a0909;
+    cursor: pointer; 
+    margin-top: 19px;
+    margin-bottom: 10px; 
+    margin-right: 5px;
+}
+/* All-songs container ...... */
+.songslist
+{
+    display: flex;
+    flex-direction: column;
+    height:auto;
+    padding: 10px;
+}
+
+.box
+{
+    height: 30px;
+    width:100%;
+    background-color:var(--darkblue--clr);
+    border-radius: 5px;
+    /* border: solid black; */
+    box-shadow: 1px 1px 10px 1px #8ccfee inset;
+
+    margin-top: 2px;
+    color: black;
+    font-size: 1.1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content:center;
+    padding-top: 10px;
+    
+}
+.box:hover{
+    background-color: transparent;
+}
+
+
+/* song card section */
+.card-div
+{
+    margin: 10px; 
+     height: 80vh; 
+    width:40vw;
+    /* border:solid black; */
+    border-radius: 4px;
+    background-color:var(--blue-clr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#song-con{
+    height:60%;
+    width:90%;
+    border-radius: 10px;
+    background-color: var(--darkblue--clr);
+    box-shadow: 10px;
+    padding: 20px;
+    margin-top: 0px;
+    box-shadow: 1px 1px 10px 1px #8ccfee inset;
+   
+}
+
+.card-div h2{
+    color: var(--black-clr);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.card-div h2:hover{
+    color:  rgb(66, 72, 42);
+}
+
+audio{
+    width:90%;
+    margin: 15px;
+    
+}
+
+/* prev and next buttons */
+
+.btns-div button
+{
+    height: 30px;
+    width: 80px;
+    background-color: rgb(77, 93, 193);
+    border: none;
+    border-radius: 5px;
+}
+
+
+.btns-div i{
+    color: var(--black-clr);  
+}
+/* Add- to -playlist button */
+#add-to-playlist
+{
+    background-color: rgb(77, 93, 193);
+    border: none;
+    margin-top: 5px;
+    width: 80px;
+    color: var(--col4);
+    border-radius: 5px;
+}
+
+/* Playlists-section */
+.playlist-con
+{
+    margin: 10px;  
+    width:40vw;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#createplaylist button
+{
+    background-color: rgb(77, 93, 193);
+    border-radius: 3px;
+    margin-top: 2px;
+    margin-left: 30px;
+    
+}
+
+#createplaylist
+{
+    justify-content: space-between;
+}
+
+.playlist-div
+{
+    height:80vh;
+    background-color:var(--darkblue--clr);
+    border-radius: 5px;
+    /* border: solid black; */ 
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+ h3,h2,p{
+    padding-left:8px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#current-playlist
+{
+    
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#current-playlist {
+    max-height: 20%;
+    overflow: scroll;
+    scrollbar-width: none; 
+}
+
+#all-playlist
+{
+    
+    display: flex;
+    flex-direction: column;
+    height:auto;
+    padding: 10px;
+}
+
+.boxs
+{
+    height: 30px;
+    width:100%;
+    background-color:var(--darkblue--clr);
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 1px #8ccfee inset;
+    margin-top: 2px;
+    color: black;
+    font-size: 1.1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-left: 5px;
+}
+.boxs:hover{
+    background-color: var(--blue-clr);
+}
+
+/* Additional Features */
+/* search  for song and playlist*/
+.search{
+   
+    border:black solid 1px;
+    background-color:var(--grey-clr);
+    color:#ffffff;
+    border-radius: 3px;
+}
+
+.search::placeholder {
+    color: white;
+   }
+  
+
+#searchbox{
+    margin-left:40%;
+    padding-left: 10%;
+ }
+ 
+
+/* Remove a song in playlist */
+.delbtn
+{
+    background-color:transparent ;
+    border: none;
+   
+    margin-left: auto;
+}
+
+
+/* toggle-in Dark Mode */
+.dark-mode .box,
+.dark-mode .select-Genre select,
+.dark-mode .img-div,
+.dark-mode .song-div,
+.dark-mode .playlist-div,
+.dark-mode #song-con,
+.dark-mode .add-to-playlist,
+.dark-mode .boxs,
+.dark-mode .search
+{
+    background-color:var(--darkgrey-clr);
+    color: var(--black-clr);
+}
+.dark-mode .boxs:hover,
+.dark-mode .box:hover{
+    background-color:var(--grey-clr);
+}
+.dark-mode .boxs,
+.dark-mode .box,
+.dark-mode #song-con
+{
+    box-shadow: 1px 1px 9px 1px #282929 inset;
+}
+
+.dark-mode .All-Song-div,
+.dark-mode .card-div,
+
+.dark-mode .select-Genre select {
+    border-radius: 5px;
+    
+    background-color: var(--grey-clr);
+}
+
+
